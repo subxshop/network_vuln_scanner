@@ -1,0 +1,38 @@
+{
+    "22": {
+        "service": "ssh",
+        "issues": [
+            {
+                "description": "SSH service detected. Weak or outdated SSH configurations may allow brute-force attacks.",
+                "severity": "medium"
+            }
+        ]
+    },
+    "80": {
+        "service": "http",
+        "issues": [
+            {
+                "description": "HTTP detected. Unencrypted web traffic may expose sensitive data.",
+                "severity": "medium"
+            }
+        ]
+    },
+    "443": {
+        "service": "https",
+        "issues": [
+            {
+                "description": "HTTPS detected. Check for outdated TLS versions or weak cipher suites.",
+                "severity": "low"
+            }
+        ]
+    },
+    "445": {
+        "service": "smb",
+        "issues": [
+            {
+                "description": "SMB service detected. SMBv1 is vulnerable to EternalBlue (CVE-2017-0144).",
+                "severity": "high"
+            }
+        ]
+    }
+}
