@@ -3,6 +3,7 @@ Discovering hosts...
 192.168.1.1  MAC: 90:d3:cf:c9:d0:4f
 192.168.1.25  MAC: 9c:6b:00:08:14:22
 192.168.1.243  MAC: c4:98:5c:db:22:43
+192.168.1.3  MAC: be:2f:66:72:c2:d8
 192.168.1.100  MAC: 08:91:15:b1:de:8b
 192.168.1.101  MAC: bc:f4:d4:17:50:f7
 192.168.1.151  MAC: 60:74:f4:70:73:18
@@ -25,14 +26,13 @@ Host: 192.168.1.25
 
 Host: 192.168.1.243
 
+Host: 192.168.1.3
+  Port 853 - open - domain-s
+
 Host: 192.168.1.100
   Port 443 - open - https
 
 Host: 192.168.1.101
-  Port 80 - open - http
-  Port 443 - open - https
-  Port 515 - open - printer
-  Port 631 - open - ipp
 
 Host: 192.168.1.151
 
@@ -54,15 +54,15 @@ Host: 192.168.1.25
 Host: 192.168.1.243
   No known vulnerabilities.
 
+Host: 192.168.1.3
+  No known vulnerabilities.
+
 Host: 192.168.1.100
   [LOCAL] LOW - Port 443 (https)
       HTTPS detected. Check for outdated TLS versions or weak cipher suites.
 
 Host: 192.168.1.101
-  [LOCAL] MEDIUM - Port 80 (http)
-      HTTP detected. Unencrypted web traffic may expose sensitive data.
-  [LOCAL] LOW - Port 443 (https)
-      HTTPS detected. Check for outdated TLS versions or weak cipher suites.
+  No known vulnerabilities.
 
 Host: 192.168.1.151
   No known vulnerabilities.
