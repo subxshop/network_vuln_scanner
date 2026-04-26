@@ -55,6 +55,7 @@ Open PowerShell inside the project folder:
 Code
 cd C:\path\to\network_vuln_scanner
 python -m venv venv
+
 5️⃣ Activate the Virtual Environment
 PowerShell blocks scripts by default, so run:
 
