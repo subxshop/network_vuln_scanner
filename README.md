@@ -27,20 +27,61 @@ Threaded Scanning – GUI stays responsive
 Cross‑platform support (Windows, macOS, Linux)
 
 📦 Installation
-1. Clone the repository
+1️⃣ Install Python 3
+Download Python from:
+https://www.python.org/downloads/
+
+During installation:
+✔ Check “Add Python to PATH”
+
+2️⃣ Install Npcap (Required for ARP Scanning)
+Download Npcap from:
+https://npcap.com
+
+During installation, check:
+✔ Install Npcap in WinPcap API‑compatible Mode
+
+Restart your laptop after installation.
+
+3️⃣ Download the Project
+Download ZIP:
+Click Code → Download ZIP
+
+Extract the folder
+
+4️⃣ Create a Virtual Environment
+Open PowerShell inside the project folder:
+
 Code
-git clone https://github.com/subxshop/network_vuln_scanner
-cd network_vuln_scanner
-2. Create a virtual environment (recommended)
-Code
+cd C:\path\to\network_vuln_scanner
 python -m venv venv
-.\venv\Scripts\Activate.ps1   # Windows PowerShell
-3. Install dependencies
+5️⃣ Activate the Virtual Environment
+PowerShell blocks scripts by default, so run:
+
+Code
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+Then activate:
+
+Code
+.\venv\Scripts\Activate.ps1
+You should now see:
+
+Code
+(venv)
+6️⃣ Install Required Python Packages
+Run:
+
+Code
+pip install scapy python-nmap
+If you have a requirements.txt, use:
+
 Code
 pip install -r requirements.txt
-4. Install Nmap
-Required for port scanning.
-Download from: https://nmap.org/download.html (nmap.org in Bing)
+7️⃣ Run the Scanner
+Start the GUI:
+
+Code
+python gui.py
 
 ▶️ Running the Application
 Code
