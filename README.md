@@ -69,6 +69,7 @@ You should now see:
 
 Code
 (venv)
+
 6️⃣ Install Required Python Packages
 Run:
 
@@ -78,6 +79,7 @@ If you have a requirements.txt, use:
 
 Code
 pip install -r requirements.txt
+
 7️⃣ Run the Scanner
 Start the GUI:
 
